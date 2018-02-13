@@ -1,0 +1,220 @@
+/* REUSABLES */
+
+/*
+SOLID COLOR:#d35400
+*/
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Ariel", "sans-sarif";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: block;
+    padding: 80px 0;
+}
+
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.rows {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 200%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #d35400;
+    width: 200px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+/************************** 
+HEADER 
+**************************/
+
+.home {
+    color: #777;
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))),
+    url(https://images.unsplash.com/photo-1515847049296-a281d6401047?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3b6e1f961ac91b583c605c09e998166&auto=format&fit=crop&w=1050&q=80);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(https://images.unsplash.com/photo-1515847049296-a281d6401047?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3b6e1f961ac91b583c605c09e998166&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    /*   background-position: center; */
+    background-attachment: fixed;
+}
+
+.con {
+    padding-bottom: 4px;
+}
+
+.logo {
+    font-size: 120%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.logo:hover,
+.logo:active {
+    text-decoration: none;
+    color: #d35400 !important;
+
+}
+
+.navbar {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 2px 2px #a3a3a3;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+    border-bottom: 2px solid #d35400;
+
+}
+
+.nav-menu li {
+    box-sizing: border-box;
+    height: 55px;
+}
+
+.nav-menu {
+    letter-spacing: 1.5px;
+    padding-bottom: 12px;
+    /*    text-transform: uppercase;*/
+}
+
+.nav-list {
+    /*    font-size: 110%;*/
+}
+
+.head-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.head-main h1 {
+    letter-spacing: 1.5px;
+    font-size: 300%;
+    color: #eee;
+}
+
+.orange {
+    color: #d35400;
+}
+
+.underline {
+    border-bottom: 2px solid #d35400;
+}
+
+/************************** 
+About Section
+**************************/
+
+.user-image {
+    text-align: center;
+
+}
+
+.user-image img {
+    width: 50%;
+    max-width: 360px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+.user-image-label {
+    display: block;
+    padding: 10px;
+    text-transform: Uppercase;
+}
+
+.user-image-label:first-of-type {
+    font-size: 150%;
+}
+
+.rows-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/************************** 
+Media Querries
+**************************/
+
+/*WIDTH MEDIA QUERIES*/
+@media only screen and (max-width: 768px) {
+    .nav-menu li a:hover,
+    .nav-menu li a:active {
+        border-bottom: none;
+        color: #d35400;
+        text-decoration: none;
+    }
+    .head-main h1 {
+        letter-spacing: 1.5px;
+        font-size: 180%;
+    }
+    .logo {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .logo {
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 85%;
+    }
+    .user-image{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 340PX) {
+    .logo {
+        font-size:65%;
+    }
+    .head-main{
+        font-size:85%
+    }
+   
+}
+/*HEIGHT MEDIA QUERY*/
+@media only screen and (max-height: 768px) {
+    .head-main {
+        /*    padding-top: 50%;*/
+    }
+}
+
+/*Small phones: from 0 to 480px*/
+
+@media only screen and (max-height: 480px) {
+    .head-main {
+        /*    padding-top: 20%;*/
+    }
+}
