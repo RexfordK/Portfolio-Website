@@ -58,7 +58,7 @@ HEADER
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url(https://images.unsplash.com/photo-1515847049296-a281d6401047?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3b6e1f961ac91b583c605c09e998166&auto=format&fit=crop&w=1050&q=80);
     background-size: cover;
-    /*   background-position: center; */
+    /*       background-position: center; */
     background-attachment: fixed;
 }
 
@@ -164,10 +164,24 @@ About Section
 }
 
 /************************** 
+PORTFOLIO SECTION
+**************************/
+
+.portfolio-con{
+    text-align: center;
+}
+.portfolio-con img {
+    width: 100%;
+    max-width: 460px;
+    text-align: center;
+}
+
+/************************** 
 Media Querries
 **************************/
 
 /*WIDTH MEDIA QUERIES*/
+
 @media only screen and (max-width: 768px) {
     .nav-menu li a:hover,
     .nav-menu li a:active {
@@ -189,22 +203,26 @@ Media Querries
     .logo {
         padding-left: 0;
         margin-left: 0;
-        font-size: 85%;
+        font-size: 100%;
     }
-    .user-image{
+    .user-image {
         width: 100%;
     }
 }
-@media only screen and (max-width: 340PX) {
+
+@media only screen and (max-width: 340px) {
     .logo {
-        font-size:65%;
+        font-size: 70%;
+        padding-right: 0
     }
-    .head-main{
-        font-size:85%
+    .head-main {
+        font-size: 85%
     }
-   
+
 }
+
 /*HEIGHT MEDIA QUERY*/
+
 @media only screen and (max-height: 768px) {
     .head-main {
         /*    padding-top: 50%;*/
