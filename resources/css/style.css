@@ -89,10 +89,23 @@ HEADER
 
 }
 
+#logo-image{
+    widows: 20px;;
+    height:65px;
+    position: relative;
+    left:15px;
+    /* display: none; */
+}
+
 .navbar {
     padding: 0;
     border-radius: 0;
     box-shadow: 0 2px 2px #a3a3a3;
+    min-height:57px;
+}
+
+.navbar-brand{
+    padding:0;
 }
 
 .nav-menu a:hover,
@@ -101,9 +114,18 @@ HEADER
 
 }
 
+.nav-list{
+    margin-right:5px;
+}
+
 .nav-menu li {
     box-sizing: border-box;
     height: 55px;
+}
+
+.navbar-nav>li>a{
+    padding-top:20px;
+    padding-bottom: 10px;
 }
 
 .nav-menu {
@@ -123,6 +145,8 @@ HEADER
     text-transform: uppercase;
     text-align: center;
 }
+
+
 
 .head-main h1 {
     letter-spacing: 1.5px;
@@ -177,7 +201,7 @@ SKILLS SECTION
 }
 
 #bootstrap-logo{
-    width: 200%;
+    width: 150%;
 }
 .skills-text-field{
         padding-top: 20px;
@@ -214,6 +238,7 @@ Media Querries
         color: #d35400;
         text-decoration: none;
     }
+   
     .head-main h1 {
         letter-spacing: 1.5px;
         font-size: 180%;
@@ -222,42 +247,39 @@ Media Querries
         padding-left: 0;
         margin-left: 0;
     }
+
+    .nav-hamburger{
+        margin-top: 12px;
+        margin-bottom:4px;
+    
+    }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 480px) {
+    .head-main h1 {
+        font-size: 160%;
+    }
     .logo {
         padding-left: 0;
         margin-left: 0;
-        font-size: 100%;
+        font-size: 115%;
+        position: relative;
+        right:20px;
     }
     .user-image {
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 425px) {
     .logo {
-        font-size: 70%;
+        font-size: 80%;
         padding-right: 0
     }
     .head-main {
-        font-size: 85%
+        /* font-size: 85% */
     }
 
 }
 
 /*HEIGHT MEDIA QUERY*/
-
-@media only screen and (max-height: 768px) {
-    .head-main {
-        /*    padding-top: 50%;*/
-    }
-}
-
-/*Small phones: from 0 to 480px*/
-
-@media only screen and (max-height: 480px) {
-    .head-main {
-        /*    padding-top: 20%;*/
-    }
-}
