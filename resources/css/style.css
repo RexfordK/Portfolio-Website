@@ -3,13 +3,14 @@
 /*
 SOLID COLOR:#d35400
 */
-
-body {
+html{
     overflow-x: hidden;
+}
+body {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    font-family: "Ariel", "sans-sarif";
+    font-family: 'Lato', "Ariel",  "sans-serif";
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -35,9 +36,15 @@ section:nth-child(odd) {
 }
 
 .rows-container {
+    overflow:hidden;
     max-width: 800px;
     width: 100%;
     text-align: center;
+    margin: 0 auto;
+}
+.rows-nc{
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 .center{
@@ -53,13 +60,9 @@ h2 {
     margin-bottom: 50px;
 }
 
-
-
-
 /************************** 
 HEADER 
 **************************/
-
 .home {
     color: #777;
     height: 100vh;
@@ -90,7 +93,6 @@ HEADER
 }
 
 #logo-image{
-    widows: 20px;;
     height:65px;
     position: relative;
     left:15px;
@@ -111,7 +113,6 @@ HEADER
 .nav-menu a:hover,
 .nav-menu a:active {
     border-bottom: 2px solid #d35400;
-
 }
 
 .nav-list{
@@ -146,8 +147,6 @@ HEADER
     text-align: center;
 }
 
-
-
 .head-main h1 {
     letter-spacing: 1.5px;
     font-size: 300%;
@@ -165,7 +164,6 @@ HEADER
 /************************** 
 About Section
 **************************/
-
 .user-image {
     text-align: center;
 
@@ -188,7 +186,6 @@ About Section
     font-size: 150%;
 }
 
-
 /************************** 
 SKILLS SECTION
 **************************/
@@ -196,90 +193,109 @@ SKILLS SECTION
     width: 80%;
 }
 .no-pad-right{
+    top:5px;
     padding: 0;
     right: 25px;
 }
 
 #bootstrap-logo{
-    width: 150%;
+    width: 146%;
 }
 .skills-text-field{
         padding-top: 20px;
 }
-.sm-border{
-    border-bottom: 1px solid #dfdfdf;
-}
-    
-
-
-
 
 /************************** 
 PORTFOLIO SECTION
 **************************/
-
-
 #portfolio img {
     width: 100%;
     max-width: 460px;
     text-align: center;
 }
 
+
 /************************** 
-Media Querries
+Contact-Footer Section
 **************************/
+.footer-con{
+    padding: 20px 0 10px;
+}
 
-/*WIDTH MEDIA QUERIES*/
+footer{
+    background-color: #333;
+}
 
-@media only screen and (max-width: 768px) {
-    .nav-menu li a:hover,
-    .nav-menu li a:active {
-        border-bottom: none;
-        color: #d35400;
-        text-decoration: none;
-    }
+.footer-section,  
+.footer-section p{
+color: #eee;
+}
+
+.footer-heading{
+    color: #d35400;
+}
+
+.social-list{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.social-list li {
+    float: left;
+    padding:10px 20px;
+    font-size: 220%;
+}
+
+.social-list li a{
+    color: #6e6e6e;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active{
+    color: #3b5998;
+}
+
+.ion-social-github:hover,
+.ion-social-github:active{
+    color: #050505;
+}
+
+.ion-social-linkedin:hover,
+.ion-social-linkedin:active{
+    color: #007bb5;
+}
+
+.ion-fireball:hover,
+.ion-fireball:active{
+    color:darkgreen;
+}
+
+.resume-btn-con{
+padding-bottom: 15px;
+}
+
+.resume-btn{
+    background: none;
+    border-radius: 15px;
+    text-decoration: none;
+    padding:5px;
+    border-style: none;
+    border: solid 2px #4c4c4c
+}
+
+.resume-btn:hover,
+.resume-btn:active{
+   border-color: #d35400;
    
-    .head-main h1 {
-        letter-spacing: 1.5px;
-        font-size: 180%;
-    }
-    .logo {
-        padding-left: 0;
-        margin-left: 0;
-    }
-
-    .nav-hamburger{
-        margin-top: 12px;
-        margin-bottom:4px;
-    
-    }
 }
 
-@media only screen and (max-width: 480px) {
-    .head-main h1 {
-        font-size: 160%;
-    }
-    .logo {
-        padding-left: 0;
-        margin-left: 0;
-        font-size: 115%;
-        position: relative;
-        right:20px;
-    }
-    .user-image {
-        width: 100%;
-    }
+.resume-btn a{
+    color: #eee
 }
 
-@media only screen and (max-width: 425px) {
-    .logo {
-        font-size: 80%;
-        padding-right: 0
-    }
-    .head-main {
-        /* font-size: 85% */
-    }
-
+.resume-btn a:hover,
+.resume-btn a:active{
+    text-decoration: none;
 }
-
-/*HEIGHT MEDIA QUERY*/

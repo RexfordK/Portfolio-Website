@@ -1,0 +1,64 @@
+/************************** 
+Media Querries
+**************************/
+
+/*WIDTH MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+    /* navbar section */
+    .nav-menu li a:hover,
+    .nav-menu li a:active {
+        border-bottom: none;
+        color: #d35400;
+        text-decoration: none;
+    }
+    .logo {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .nav-hamburger {
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+    /* Header hero section */
+    .head-main h1 {
+        letter-spacing: 1.5px;
+        font-size: 180%;
+    }
+    /* forms section */
+}
+
+@media only screen and (max-width: 480px) {
+    .head-main h1,
+    h2 {
+        font-size: 160%;
+    }
+    .logo {
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 115%;
+        position: relative;
+        right: 20px;
+    }
+    .user-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .logo {
+        font-size: 100%;
+        padding-right: 0
+    }
+    .logo-text {
+        display: none;
+    }
+    #logo-image {
+        height: 80px;
+        top: -6px;
+    }
+    .head-main h1,
+    h2 {
+        font-size: 140%;
+    }
+}
