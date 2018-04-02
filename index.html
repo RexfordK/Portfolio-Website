@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=description content="RK Development is the potfolio website for Rexford Koduah.">
+    <meta name=description content="RK Development is Front-End Web Development potfolio website of Rexford Koduah.">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
@@ -24,29 +25,27 @@
 
 <body>
     <header class="home" id="top">
-        <nav class="navbar navbar-default navbar-fixed-top">
+
+        <nav class="navbar animated fadeIn" id="navbar-one">
             <div class="container-fluid con">
                 <div class="rows ">
-                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed nav-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                            aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                        <button type="button" id="nav-button" class="ion-navicon-round navbar-toggle collapsed button-margin" data-toggle="collapse"
+                            data-target="#navbar-collapse-2" aria-expanded="false">
                         </button>
-                        <a href="#top" class="navbar-brand logo">
-                            <span>
-                                <img src="resources/css/img/2f087e82-6473-49b7-b6f5-a567a66b6053-min.png" id="logo-image" alt="logo-image">
-                            </span>
-                            <span class="logo-text">R
-                                <span class="orange">.</span>K Development</span>
-                        </a>
+                        <div class="brand-container2" id="brand-con">
+                            <a href="#top" class=" logo">
+                                <span>
+                                    <img src="resources/css/img/2f087e82-6473-49b7-b6f5-a567a66b6053-min.png" id="logo-image" alt="logo-image">
+                                </span>
+                                <span class="logo-text">R
+                                    <span class="orange">.</span>K Development</span>
+                            </a>
+                        </div>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-menu" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right nav-list">
+                    <div class="collapse navbar-collapse nav-menu" id="navbar-collapse-2">
+                        <ul class="nav navbar-nav navbar-right nav-list js--nav-list" id="navbar-list-select">
                             <li>
                                 <a href="#about">About</a>
                             </li>
@@ -64,18 +63,20 @@
                     <!-- /.navbar-collapse -->
                 </div>
             </div>
-            <!-- /.container-fluid -->
         </nav>
-
+        <!-- Hero Section -->
         <div class="container">
-            <div class="row">
-                <div class="head-main">
-                    <h1>R
-                        <span class="orange">.</span>K
-                        <br>
-                        <span class="underline">Development</span>
-                    </h1>
-                </div>
+            <div class="head-main">
+                <h1>R
+                    <span class="orange">.</span>K
+                    <br>
+                    <span class="underline">Development</span>
+                </h1>
+            </div>
+            <div class="arrow-container animated fadeInDown" id="down-arrow">
+                <a href="#about">
+                    <i class="ion-ios-arrow-down arrow-style"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -87,10 +88,10 @@
             <div class="col-sm-12">
                 <div class="rows">
 
-                    <div class="rows-container">
-                        <h2>About Me</h2>
+                    <div class="rows-container js--wp1">
+                        <h2 class=" about-head animated">About Me</h2>
                         <div class="rows-container col-md-12">
-                            <div class="user-image">
+                            <div class="user-image animated">
                                 <img src="https://avatars3.githubusercontent.com/u/21349552?v=4" alt="Rexford-image">
                                 <p>Hello, my name is Rexford Koduah and I am a Chemist turned Web-Developer. As a Chemist, and
                                     now as a Web-Developer, I have a unique ability for attention to detail. I love working
@@ -108,28 +109,25 @@
     <!-- SECTION SKILLS -->
 
     <section class="skills-section" id="skills">
-        <div class="container">
-            <div class="rows">
-                <h2>Skills</h2>
-                <div class="rows-container">
-                    <div class="col-xs-6 skill-image">
-                        <img src="resources/css/img/web-trifecta_html5_css3_js-strict%20(Small)-min.png" alt="html,css,javascript">
+        <div class="container js--wp2">
+            <h2>Skills</h2>
+            <div class="rows-container">
+                <div class="col-xs-6 skill-image">
+                    <img src="resources/css/img/web-trifecta_html5_css3_js-strict%20(Small)-min.png" alt="html,css,javascript">
+                </div>
+                <div class="col-xs-6 skill-image">
+                    <div class="col-xs-6 no-pad-right">
+                        <img src="resources/css/img/jquery-logo-min%20(Small)-min.png" alt="jQuery">
                     </div>
-                    <div class="col-xs-6 skill-image">
-                        <div class="col-xs-6 no-pad-right">
-                            <img src="resources/css/img/jquery-logo-min%20(Small)-min.png" alt="jQuery">
-                        </div>
-                        <div class="col-xs-6 no-pad-right">
-                            <img src="resources/css/img/bootstrap-logo-3%20(Small)-min.png" id="bootstrap-logo" alt="bootstrap">
-                        </div>
+                    <div class="col-xs-6 no-pad-right">
+                        <img src="resources/css/img/bootstrap-logo-3%20(Small)-min.png" id="bootstrap-logo" alt="bootstrap">
                     </div>
                 </div>
-
-                <div class="col-sm-12">
-                    <div class="rows-container">
-                        <p class="skills-text-field">I am proficient in Html, Css, and Javascript. In addition, I am also familier with Front-end libraries
-                            including Jquery and Bootstrap.</p>
-                    </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="rows-container">
+                    <p class="skills-text-field">I am proficient in Html, Css, and Javascript. In addition, I am also familier with Front-end libraries
+                        including Jquery and Bootstrap.</p>
                 </div>
             </div>
         </div>
@@ -139,24 +137,28 @@
     <!-- SECTION Portfolio -->
 
     <section id="portfolio">
-        <div class="container center">
+        <div class="container center js--wp3">
             <!--<div class="rows">-->
             <h2>My Portfolio</h2>
             <!--</div>-->
             <div class="rows">
-                <div class="col-lg-4 col-sm-4 col-xs-12">
-                    <img src="resources/css/img/placeit-min.png" alt="colorGame">
-                    <h3>Color Match Game</h3>
+                <div class="col-lg-4 col-sm-4 col-xs-12 js--wp4" id="project1">
+                    <a href="#">
+                        <img src="resources/css/img/placeit-min.png" alt="colorGame">
+                        <h3>Color Match Game</h3>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-12">
-                    <img src="resources/css/img/placeit1-min.png" alt="coming_soon">
-                    <h3>Coming Soon</h3>
-                </div>
-                <div class="col-lg-4 col-sm-4 col-xs-12">
-                    <div class="rows">
+                <div class="col-lg-4 col-sm-4 col-xs-12 js--wp5" id="project2">
+                    <a href="#">
                         <img src="resources/css/img/placeit1-min.png" alt="coming_soon">
                         <h3>Coming Soon</h3>
-                    </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-12 js--wp6" id="project3">
+                    <a href="#">
+                        <img src="resources/css/img/placeit1-min.png" alt="coming_soon">
+                        <h3>Coming Soon</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -164,47 +166,51 @@
 
     <!-- SECTION Contact-Footer -->
     <footer class="footer-section" id="contact">
-        
-            <div class="rows-container">
-                <div class="footer-con">
+
+        <div class="rows-container">
+            <div class="footer-con">
                 <h3 class="footer-heading">Connect With Me</h3>
 
                 <ul class="social-list center">
                     <li>
-                        <a href="https://www.facebook.com/rexford.koduah">
+                        <a href="https://www.facebook.com/rexford.koduah" target="_blank">
                             <i class="ion-social-facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/RexfordK">
+                        <a href="https://github.com/RexfordK" target="_blank">
                             <i class="ion-social-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/rexford-koduah-674713a4/">
+                        <a href="https://www.linkedin.com/in/rexford-koduah" target="_blank">
                             <i class="ion-social-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.freecodecamp.org/rexfordk">
+                        <a href="https://www.freecodecamp.org/rexfordk" target="_blank">
                             <i class="ion-fireball"></i>
                         </a>
                     </li>
                 </ul>
                 <div class="resume-btn-con">
-                    <button class="resume-btn"><a href="#" class="js--resume-text">Download Resume</a></button>
+                    <button class="resume-btn">
+                        <a href="https://drive.google.com/file/d/1MfX-GQOmI0cXJKTGdiJWI-Q-MqjqaGhi/view?usp=sharing" target="_blank">Download Resume</a>
+                    </button>
                 </div>
                 <p>Copyright &copy; 2018 by Rexford Koduah. All rights reserved.</p>
             </div>
         </div>
-   
+
     </footer>
 
 
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendors/javascript/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="resources/javascript/script.js"></script>
 </body>
 
 </html>
