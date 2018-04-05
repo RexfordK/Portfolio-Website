@@ -4,11 +4,9 @@
 SOLID COLOR:#d35400
 */
 
-html {
-    overflow-x: hidden;
-}
 
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -22,8 +20,6 @@ h3 {
     margin: 0;
     padding: 0;
 }
-
-a {}
 
 section {
     display: block;
@@ -75,6 +71,7 @@ h3:hover {
     color: #d35400;
 }
 
+
 /************************** 
 HEADER 
 **************************/
@@ -89,8 +86,8 @@ HEADER
     background-attachment: fixed;
 }
 
-.con {
-    padding-bottom: 4px;
+.padding-bot {
+    padding-bottom: 0;
 }
 
 .brand-container {
@@ -119,13 +116,6 @@ HEADER
     color: #d35400 !important;
 }
 
-#logo-image {
-    height: 65px;
-    position: relative;
-    left: 15px;
-    display: none;
-}
-
 .button-margin {
     margin-top: 30px;
 }
@@ -141,21 +131,31 @@ HEADER
     box-shadow: 0 2px 2px black;
 }
 
+#navbar-one{
+    z-index: 101;
+}
+
 .navbar {
     padding: 0;
     border-radius: 0;
     min-height: 69px;
-    -moz-animation-duration: 1.75s;
+    /* -moz-animation-duration: 1.75s;
     -webkit-animation-duration: 1.75s;
     animation-duration: 3s;
     -moz-animation-delay: .4s;
     -webkit-animation-delay: .4s;
-    animation-delay: .4s;
+    animation-delay: .4s; */
+}
+
+.top-navbar-one{
+    z-index:100;
 }
 
 .navbar-brand {
     padding: 0;
 }
+
+
 
 .nav-menu a {
     color: #fff;
@@ -215,6 +215,7 @@ HEADER
 }
 
 .head-main {
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -318,6 +319,7 @@ About Section
     -webkit-animation-delay: .6s;
     animation-delay: .6s;
 }
+
 /************************** 
 SKILLS SECTION
 **************************/
@@ -421,7 +423,18 @@ footer {
     text-decoration: none;
     padding: 5px;
     border-style: none;
-    border: solid 2px #4c4c4c
+    border: solid 2px #4c4c4c;
+    color:#eee;
+}
+
+.resume-btn:link,
+.resume-btn:active{
+    text-decoration: none;
+}
+
+.resume-btn:hover,
+.resume-btn:focus{
+    color: #eee;
 }
 
 .resume-btn:hover,
@@ -444,6 +457,14 @@ JavaScript Animations
 **************************/
 .js--wp0{
     opacity: 0;
+}
+
+.js--background-visible{
+    background-color: #1c1c1c;
+    border-color: black;
+    transition: 1000ms;
+    box-shadow: 0 2px 2px black;
+    z-index:100;
 }
 
 .js--wp1{

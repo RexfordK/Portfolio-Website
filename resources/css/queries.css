@@ -4,8 +4,6 @@ Media Querries
 
 /*WIDTH MEDIA QUERIES*/
 
-
-
 @media only screen and (max-width: 768px) {
     /* navbar section */
     .nav-menu li a:hover,
@@ -14,11 +12,9 @@ Media Querries
         color: #d35400;
         text-decoration: none;
     }
-
-    .js--nav-list{
-        padding-top:0;
+    .js--nav-list {
+        padding-top: 0;
     }
-
     .logo {
         padding-left: 0;
         margin-left: 0;
@@ -32,8 +28,7 @@ Media Querries
         letter-spacing: 1.5px;
         font-size: 180%;
     }
-
-    .arrow-container{
+    .arrow-container {
         font-size: 200%;
     }
     /* forms section */
@@ -52,10 +47,9 @@ Media Querries
     .user-image {
         width: 100%;
     }
-    .arrow-container{
+    .arrow-container {
         font-size: 150%;
     }
-    
 }
 
 @media only screen and (max-width: 425px) {
@@ -63,14 +57,11 @@ Media Querries
         font-size: 80%;
         padding-right: 0;
         position: absolute;
-        
     }
-
-#nav-button{
-    position: relative;
-    left: 15px;
-}
-
+    #nav-button {
+        position: relative;
+        left: 15px;
+    }
     #logo-image {
         height: 80px;
         top: -6px;
@@ -78,5 +69,55 @@ Media Querries
     .head-main h1,
     h2 {
         font-size: 140%;
+    }
+}
+
+/* HEGHT */
+
+@media only screen and (max-height: 560px) and (max-width:768px) {
+    .arrow-container {
+        top: 55vh;
+    }
+}
+
+@media only screen and (max-height: 420px) and (max-width:768px) {
+    .arrow-container {
+        top: 52vh;
+    }
+}
+
+@media only screen and (max-height: 360px) and (max-width:768px) {
+    .arrow-container {
+        top: 49vh;
+    }
+}
+
+@media only screen and (max-height: 318px) and (max-width:768px) {
+    .arrow-container {
+        display: none;
+    }
+
+    #navbar-one ul{
+        font-size:15px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #navbar-one ul li{
+        max-height: 40px;
+    }
+
+    #navbar-one ul li a{
+        padding-top: 10px;
+    }
+
+}
+
+@media only screen and (max-height: 660px) and (max-width:768px) {
+    .top-navbar-one {
+        opacity: 0.85;
+        background-color: #1c1c1c;
+        border-color: black;
+        box-shadow: 0 2px 2px black;
     }
 }

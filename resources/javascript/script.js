@@ -54,7 +54,6 @@ $(document).ready(function () {
         $("#nav-button").toggleClass("button-margin");
         $("#down-arrow").toggleClass("fadeInDown animated");
         $(".js--wp1").addClass("animated fadeIn");
-
     }, {
         offset: 60
     });
@@ -89,10 +88,7 @@ $(document).ready(function () {
 
     //auto close nav when clicked
     $("#nav-button").click(function(){
-        // $("#down-arrow").removeClass("fadeInDown animated");
-        $("#down-arrow").toggleClass("hidden", function(e){
-            
-        })
+        $("#down-arrow").toggleClass("hidden");
     });
     
     $('.navbar-collapse a ').click(function () {
@@ -101,6 +97,6 @@ $(document).ready(function () {
     $('.logo').click(function () {
         $(".navbar-collapse").collapse('hide');
     });
-
-
+   
 });
+
