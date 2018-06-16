@@ -361,7 +361,7 @@ PORTFOLIO SECTION
 **************************/
 
 .background {
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 10;
     opacity: 1;
     background-color: #222;
