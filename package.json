@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Rexford Koduah's Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RexfordK/Portfolio-Website.git"
+  },
+  "author": "rexford k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RexfordK/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/RexfordK/Portfolio-Website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-uglify": "^3.0.1"
+  }
+}
