@@ -1,8 +1,8 @@
-/* REUSABLES */
 
-/*
-SOLID COLOR:#d35400
-*/
+//Variables
+$themeColor:  #d35400;
+
+/* REUSABLES */
 
 body {
   box-sizing: border-box;
@@ -60,7 +60,7 @@ h2 {
   font-size: 200%;
   text-align: center;
   margin: 0 auto;
-  border-bottom: 2px solid #d35400;
+  border-bottom: 2px solid $themeColor;
   width: 200px;
   padding-bottom: 10px;
   margin-bottom: 50px;
@@ -145,7 +145,7 @@ HEADER
 .logo:hover,
 .logo:active {
   text-decoration: none;
-  color: #d35400 !important;
+  color: $themeColor !important;
 }
 
 .logo:not(:hover){
@@ -201,7 +201,7 @@ HEADER
 
 .nav-menu a:hover,
 .nav-menu a:active {
-  border-bottom: 2px solid #d35400;
+  border-bottom: 2px solid $themeColor;
 }
 
 .js--nav-list {
@@ -271,11 +271,11 @@ HEADER
 }
 
 .orange {
-  color: #d35400;
+  color: $themeColor;
 }
 
 .underline {
-  border-bottom: 2px solid #d35400;
+  border-bottom: 2px solid $themeColor;
 }
 
 .name-occupation {
@@ -284,7 +284,7 @@ HEADER
 }
 
 .dot {
-  color: #d35400;
+  color: $themeColor;
 }
 
 .arrow-container {
@@ -503,12 +503,12 @@ Contact-Footer Section
 
 .email-style:hover,
 .email-style:focus {
-  color: #d35400;
+  color: $themeColor;
   text-decoration: none;
 }
 
 footer h3:hover {
-  color: #d35400;
+  color: $themeColor;
 }
 
 footer h3:not(:hover){
@@ -595,7 +595,7 @@ footer {
 
 .resume-btn:hover,
 .resume-btn:active {
-  border-color: #d35400;
+  border-color: $themeColor;
 }
 
 .resume-btn:not(:hover){
