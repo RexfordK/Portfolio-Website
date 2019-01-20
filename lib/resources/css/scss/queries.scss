@@ -1,0 +1,316 @@
+/************************** 
+Media Querries
+**************************/
+
+/**
+WIDTH MEDIA QUERIES
+**/
+
+@media only screen and (min-width: 1342px) {
+    .description-con h3 {
+        padding-top: 25px;
+        font-size: 1.5em;
+    }
+    .description-con p {
+        padding: 40px;
+        margin: 0;
+        font-size: 1.25em;
+    }
+    .tech-stack li {
+        font-size: 100%;
+    }
+    .btn-con {
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #par1 {
+        text-align: left;
+    }
+    #par2 {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 1163px) and (max-width: 1342px) {
+    .description-con h3 {
+        padding-top: 25px;
+        font-size: 1.3em
+    }
+    .description-con p {
+        margin: 0;
+        font-size: 120%;
+        padding: 20px;
+    }
+    .tech-stack {
+        padding-bottom: 20px;
+    }
+    .tech-stack li {
+        font-size: 75%;
+    }
+    .btn-con {
+        font-size: 85%;
+    }
+}
+
+@media only screen and (max-width: 1163px) {
+    .description-con h3 {
+        padding-top: 0;
+        font-size: 120%;
+    }
+    .description-con p {
+        font-size: 100%;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+    .tech-stack {
+        padding-bottom: 15px;
+    }
+    .tech-stack li {
+        font-size: 75%;
+    }
+    .btn-con {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (min-width:820px) and (max-width: 960px) {
+    .description-con {
+        min-height: 0;
+    }
+    .description-con h3 {
+        font-size: 100%;
+    }
+    .description-con p {
+        font-size: 100%;
+        margin: 10px;
+        padding: 0;
+    }
+    .tech-stack {
+        padding-bottom: 10px;
+    }
+    .tech-stack li {
+        font-size: 60%;
+    }
+    .btn-con {
+        font-size: 50%;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .description-con {
+        min-height: 0;
+    }
+    .description-con h3 {
+        font-size: 100%;
+    }
+    .description-con p {
+        font-size: 88%;
+        margin: 10px;
+        padding: 0;
+    }
+    .tech-stack {
+        padding-bottom: 10px;
+    }
+    .tech-stack li {
+        font-size: 55%;
+        padding: 5px;
+    }
+    .btn-con {
+        font-size: 50%;
+        margin-bottom: 0;
+    }
+    .lb-style {
+        font-size: 18px;
+    }
+    .name {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:800px) {
+    .js--nav-list li {
+        margin-right: 0;
+        font-size: 100%;
+    }
+    #portfolio img {
+        width: 103.7%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* 
+    NAVBAR SECTION
+    */
+    .nav-menu li a:hover,
+    .nav-menu li a:active {
+        border-bottom: none;
+        color: #d35400;
+        text-decoration: none;
+    }
+    .nav-menu .js--nav-list {
+        padding-top: 0;
+    }
+    .logo {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .nav-hamburger {
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+    /* 
+    HEADER HERO SECTION
+    */
+    .line-break {
+        white-space: nowrap;
+    }
+    .dot {
+        opacity: 0;
+    }
+    .head-main h1 {
+        letter-spacing: 1.5px;
+        font-size: 180%;
+    }
+    .arrow-container {
+        font-size: 200%;
+        display: none;
+    }
+    .name-occupation {
+        font-size: 21px;
+    }
+    /*
+    About Section
+    */
+    #par2 {
+        padding-top: 10px;
+    }
+    /* 
+    PROJECTS SECTION
+    */
+    .description-con p {
+        font-size: 100%;
+        margin: 20px 10px;
+    }
+    .btn-con {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .head-main h1,
+    h2 {
+        font-size: 160%;
+    }
+    .logo {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .user-image {
+        width: 100%;
+    }
+    .arrow-container {
+        font-size: 200%;
+    }
+    .name {
+        font-size: 90%;
+    }
+    .lb-style {
+        font-size: 85%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .logo {
+        font-size: 80%;
+        padding-right: 0;
+        position: absolute;
+    }
+    #nav-button {
+        position: relative;
+        left: 15px;
+    }
+    #logo-image {
+        height: 80px;
+        top: -6px;
+    }
+    .head-main h1,
+    h2 {
+        font-size: 140%;
+    }
+    .enter-btn {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+    }
+    .btn-web{
+        border-color: #d35400;
+    }
+
+    .btn-code {
+        max-width: 130px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 275px) {
+    .enter-btn {
+        font-size: 16px;
+    }
+    .btn-code {
+        max-width: 96px;
+        
+    }
+}
+
+/**
+HEIGHT MEDIA QUERIES
+**/
+
+@media only screen and (max-height: 560px) and (max-width:768px) {
+    .arrow-container {
+        top: 55vh;
+    }
+}
+
+@media only screen and (max-height: 420px) and (max-width:768px) {
+    .arrow-container {
+        top: 52vh;
+    }
+}
+
+@media only screen and (max-height: 360px) and (max-width:768px) {
+    .arrow-container {
+        top: 49vh;
+    }
+}
+
+@media only screen and (max-height: 318px) and (max-width:768px) {
+    .arrow-container {
+        display: none;
+    }
+    #navbar-one ul {
+        font-size: 15px;
+        padding: 0;
+        margin-top: 0;
+    }
+    #navbar-one ul li {
+        max-height: 40px;
+    }
+    #navbar-one ul li a {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-height: 668px) and (max-width:767px) {
+    .top-navbar-one {
+        opacity: 0.85;
+        background-color: #1c1c1c;
+        border-color: black;
+        -webkit-box-shadow: 0 2px 2px black;
+        box-shadow: 0 2px 2px black;
+    }
+}
