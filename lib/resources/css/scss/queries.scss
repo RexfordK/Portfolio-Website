@@ -100,6 +100,11 @@ WIDTH MEDIA QUERIES
 }
 
 @media only screen and (min-width:768px) and (max-width: 992px) {
+    //navbar
+    .navbar-right {
+        margin-right: 0;
+    }
+    //other parts
     .description-con {
         min-height: 0;
     }
@@ -151,11 +156,17 @@ WIDTH MEDIA QUERIES
         color: #d35400;
         text-decoration: none;
     }
+
+    .nav-menu li a:not(:hover),
+    .nav-menu li a:not(:hover) {
+       transition: all 0.15s;
+    }    
+
     .nav-menu .js--nav-list {
         padding-top: 0;
     }
     .logo {
-        padding-left: 0;
+        padding-left: 15px;
         margin-left: 0;
     }
     .nav-hamburger {
@@ -191,6 +202,14 @@ WIDTH MEDIA QUERIES
     /* 
     PROJECTS SECTION
     */
+    .project-style {
+        display: inherit;
+      }
+
+    .description-con {
+        padding: 20px 15px;
+    }
+
     .description-con p {
         font-size: 100%;
         margin: 20px 10px;
@@ -206,7 +225,6 @@ WIDTH MEDIA QUERIES
         font-size: 160%;
     }
     .logo {
-        padding-left: 0;
         margin-left: 0;
     }
     .user-image {
@@ -236,6 +254,9 @@ WIDTH MEDIA QUERIES
     #logo-image {
         height: 80px;
         top: -6px;
+    }
+    .navbar-nav>li>a {
+        font-size: .70em;
     }
     .head-main h1,
     h2 {

@@ -1,0 +1,109 @@
+//Variables
+$themeColor:  #d35400;
+
+/************************** 
+PORTFOLIO SECTION
+**************************/
+
+.background {
+    overflow: hidden;
+    z-index: 10;
+    opacity: 1;
+    background-color: #222;
+    border-bottom: 2px solid #c24d00;
+    box-shadow: -5px -0.1px 20px 0px black;
+    -webkit-box-shadow: -5px -0.1px 20px 0px black;
+    -moz-box-shadow: -5px -0.1px 20px 0px black;
+  }
+  
+  .background:last-of-type {
+    border-bottom: none;
+  }
+  
+  #portfolio img {
+    width: 100%;
+    text-align: center;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  #portfolio img:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  
+  #portfolio img:not(:hover){
+      transition: all 0.3s;
+  }
+  
+  #portfolio a:link,
+  #portfolio a:active,
+  #portfolio a:focus {
+    text-decoration: none;
+    color: #eee;
+  }
+  
+  #portfolio a:hover {
+    color: #eee;
+  }
+  
+  .project-style {
+    color: #eee;
+    display: flex;
+    align-items: center
+  }
+  
+  .description-con p {
+    margin: 20px 10px;
+  }
+  
+  .tech-stack {
+    text-transform: uppercase;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 20px 40px 20px;
+  }
+  
+  .tech-stack li {
+    font-size: 70%;
+    color: #eee;
+    display: inline-block;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid #b14600;
+    font-weight: bold;
+  }
+  
+  .btn-con {
+    margin: 0 40px 20px 40px;
+  }
+  
+  .enter-btn {
+    padding: 8px;
+    margin: 0 8px;
+    border-radius: 15px;
+    text-decoration: none;
+    border-style: none;
+    border: solid 2px #4c4c4c;
+    color: #eee;
+  }
+  
+  .enter-btn:hover,
+  .enter-btn:active {
+    border-color: #b14600;
+  }
+  
+  .enter-btn:not(:hover){
+  transition: all 0.3s
+  }
+  
+  #portfolio {
+    padding-bottom: 12px;
+  }
+  
