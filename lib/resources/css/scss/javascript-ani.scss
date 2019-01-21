@@ -1,0 +1,45 @@
+//Variables
+$themeColor:  #d35400;
+
+/************************** 
+JavaScript Animations
+**************************/
+
+.js--wp0 {
+  opacity: 0;
+}
+
+.js--background-visible {
+  background-color: #1c1c1c;
+  border-color: black;
+  -webkit-transition: 1000ms;
+  -o-transition: 1000ms;
+  transition: 1000ms;
+  -webkit-box-shadow: 0 2px 2px black;
+  box-shadow: 0 2px 2px black;
+  z-index: 100;
+}
+
+.js--wp1 {
+  opacity: 0;
+}
+
+.js--wp2 {
+  opacity: 0;
+}
+
+.js--wp3 {
+  opacity: 0;
+}
+
+.js--wp4 {
+  opacity: 0;
+}
+
+.js--wp5 {
+  opacity: 0;
+}
+
+.js--wp6 {
+  opacity: 0;
+}

@@ -1,0 +1,43 @@
+//Variables
+$themeColor:  #d35400;
+
+/************************** 
+About Section
+**************************/
+
+.user-image {
+  text-align: center;
+}
+
+.user-image img {
+  width: 65%;
+  max-width: 360px;
+  border-radius: 50%;
+  padding-bottom: 20px;
+}
+
+.user-image-label {
+  display: block;
+  padding: 10px;
+  text-transform: Uppercase;
+}
+
+.user-image-label:first-of-type {
+  font-size: 150%;
+}
+
+/* animation */
+
+.about-head {
+  -webkit-animation-duration: 1.75s;
+  animation-duration: 1.75s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.user-image {
+  -webkit-animation-duration: 1.75s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}

@@ -20,14 +20,21 @@ const AUTOPREFIXER_BROWSERS = [
 ];
 
 gulp.task("build-styles", function() {
+  var pattern = [
+    "./lib/resources/css/scss/reusables.scss",
+    "./lib/resources/css/scss/about.scss",
+    "./lib/resources/css/scss/contact-footer.scss",
+    "./lib/resources/css/scss/header.scss",
+    "./lib/resources/css/scss/javascript-ani.scss",
+    "./lib/resources/css/scss/portfolio.scss",
+    "./lib/resources/css/scss/skills.scss",
+    "./lib/resources/css/scss/queries.scss"
+  ];
   return (
     gulp
-      .src([
-        "./lib/resources/css/scss/style.scss",
-        "lib/resources/css/scss/queries.scss"
-      ])
+      .src(pattern)
       //compile sass
-      .pipe(sass().on('error', sass.logError))
+      .pipe(sass().on("error", sass.logError))
       //   combine sass files
       .pipe(concat("styles-min.css"))
       //auto-prefix css styles
@@ -39,12 +46,13 @@ gulp.task("build-styles", function() {
   );
 });
 
-gulp.task('compressJS', function (cb) {
-    return gulp.src("lib/resources/javascript/*.js")
-        .pipe(concat("main-min.js"))
-        .pipe(uglify())
-        .pipe(gulp.dest("dist/resources/javascript/"))
-  });
+gulp.task("compressJS", function(cb) {
+  return gulp
+    .src("lib/resources/javascript/*.js")
+    .pipe(concat("main-min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("dist/resources/javascript/"));
+});
 
 gulp.task("img-min", () =>
   gulp
@@ -53,4 +61,10 @@ gulp.task("img-min", () =>
     .pipe(gulp.dest("dist/resources/css/img/"))
 );
 
-gulp.task("default",["img-min","compressJS","build-styles"])
+gulp.task("watch", function() {
+  gulp.watch("lib/resources/javascript/*.js", ["compressJS"]);
+  gulp.watch("lib/resources/css/img/*", ["img-min"]);
+  gulp.watch("lib/resources/css/scss/*.scss", ["build-styles"]);
+});
+
+gulp.task("default", ["img-min", "compressJS", "build-styles"]);
