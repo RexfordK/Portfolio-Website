@@ -1,10 +1,13 @@
 var gulp = require("gulp");
-var uglify = require("gulp-uglify");
+var uglify = require('gulp-uglify-es').default;
 var sass = require("gulp-sass");
 var concat = require("gulp-concat");
 const imagemin = require("gulp-imagemin");
 const autoprefixer = require("gulp-autoprefixer");
 const csso = require("gulp-csso");
+var pump = require('pump');
+
+
 
 // Set the browser that you want to support
 const AUTOPREFIXER_BROWSERS = [
@@ -18,6 +21,14 @@ const AUTOPREFIXER_BROWSERS = [
   "android >= 4.3",
   "bb >= 9"
 ];
+
+gulp.task('uglify-error-debugging', function (cb) {
+  pump([
+    gulp.src('app/**/*.js'),
+    uglify(),
+    gulp.dest('./dist/')
+  ], cb);
+});
 
 gulp.task("build-styles", function() {
   var pattern = [
@@ -67,4 +78,4 @@ gulp.task("watch", function() {
   gulp.watch("lib/resources/css/scss/*.scss", ["build-styles"]);
 });
 
-gulp.task("default", ["img-min", "compressJS", "build-styles"]);
+gulp.task("default", ["img-min","uglify-error-debugging", "compressJS", "build-styles"]);
