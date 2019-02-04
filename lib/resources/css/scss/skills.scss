@@ -1,25 +1,30 @@
 //Variables
-$themeColor:  #d35400;
+$themeColor: #d35400;
 
 /************************** 
 SKILLS SECTION
 **************************/
 
 .skill-image img {
-    width: 80%;
-  }
-  
-  .no-pad-right {
-    top: 5px;
-    padding: 0;
-    right: 26px;
-  }
-  
-  #bootstrap-logo {
-    width: 146%;
-  }
-  
-  .skills-text-field {
-    padding-top: 20px;
-  }
-  
+  width: 80%;
+}
+
+.no-pad-right {
+  top: 5px;
+  padding: 0;
+  right: 26px;
+}
+
+.skills-text-field {
+  padding-top: 20px;
+}
+
+.skills-imgs {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-imgs img {
+  max-width: 33%;
+  max-height: 135px;
+}
